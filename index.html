@@ -90,6 +90,12 @@
       opacity: 0.8;
     }
 
+    .top-link {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
     footer {
       text-align: center;
       padding: 1rem 1.5rem 2rem;
@@ -111,6 +117,9 @@
     <h1>Urania Installation</h1>
     <p class="tagline">
       DIY Pepper’s Ghost “hologram” + Raspberry Pi projector loop · part of an AI sci-fi TV project
+    </p>
+    <p class="top-link">
+      Build & setup details: <a href="about.html">view the full guide →</a>
     </p>
   </header>
 
@@ -134,6 +143,10 @@
         <strong>Basic workflow:</strong><br>
         QR code → opens this site → you choose the hologram or the teaser →
         <br>Phone goes into the Pepper’s Ghost stage · Raspberry Pi 3 drives the projector.
+      </p>
+      <p class="note">
+        For detailed build steps for the stage and Raspberry Pi setup, see the
+        <a href="about.html">Urania build & setup guide</a>.
       </p>
     </section>
 
@@ -167,69 +180,7 @@
       </div>
     </section>
 
-    <section class="section" id="pepper-ghost">
-      <h2>Pepper’s Ghost Stage · 3D TV Shell</h2>
-      <p>
-        The Pepper’s Ghost “hologram” uses a small acrylic pyramid + a TV shell so the phone image
-        appears to float in space.
-      </p>
-      <p><strong>Files you’ll need:</strong></p>
-      <ul>
-        <li>3D models for the TV case (e.g., <code>.stl</code> or <code>.3mf</code>)</li>
-        <li>3D model or template for the internal stage / phone holder</li>
-        <li>Laser-cut template (or dimensions) for the clear acrylic “pyramid”</li>
-      </ul>
-      <p class="note">
-        (Link or list your actual files here once they’re in the repo, for example:<br>
-        <code>3d-models/tv-shell.stl</code>, <code>3d-models/phone-stage.stl</code>, <code>docs/acrylic-template.svg</code>)
-      </p>
-
-      <h3>Build Steps (Summary)</h3>
-      <ol>
-        <li>Print the TV shell and stage pieces on a 3D printer.</li>
-        <li>Cut the acrylic panels according to the provided template.</li>
-        <li>Assemble the acrylic pyramid and mount it inside the TV shell.</li>
-        <li>Test fit your smartphone so that the hologram sits centered in the acrylic.</li>
-        <li>Load the <strong>Urania hologram loop</strong> on the phone, set brightness high, and place the phone into the stage.</li>
-      </ol>
-    </section>
-
-    <section class="section" id="raspberry-pi">
-      <h2>Raspberry Pi 3 · Projector Loop Setup</h2>
-      <p>
-        This setup uses a Raspberry Pi 3 connected to a projector to auto-play the Urania teaser 
-        scene in a continuous loop when the Pi boots.
-      </p>
-
-      <h3>Hardware</h3>
-      <ul>
-        <li>Raspberry Pi 3 (or similar)</li>
-        <li>microSD card with Raspberry Pi OS</li>
-        <li>HDMI cable + projector or HDMI display</li>
-        <li>Power supply for the Pi</li>
-      </ul>
-
-      <h3>Basic Setup Steps</h3>
-      <ol>
-        <li>Install Raspberry Pi OS on the microSD card and boot the Pi.</li>
-        <li>Copy the Urania teaser video file onto the Pi (e.g., to <code>/home/pi/videos/urania-teaser.mp4</code>).</li>
-        <li>Install a lightweight media player (for example, <code>omxplayer</code> or <code>vlc</code>).</li>
-        <li>Create a small startup script that:
-          <ul>
-            <li>waits a few seconds after boot, then</li>
-            <li>launches the media player in full-screen loop mode on the projector.</li>
-          </ul>
-        </li>
-        <li>Add that script to your autostart (for example via <code>~/.config/lxsession</code> or <code>crontab</code> with <code>@reboot</code>).</li>
-      </ol>
-
-      <p class="note">
-        Once this is configured, you should be able to plug in the Pi and projector,
-        and the teaser will start playing automatically in a loop after boot.
-      </p>
-    </section>
-
-    <section class="section" id="contact">
+    <section class="section" id="about-project">
       <h2>About the Project</h2>
       <p>
         <em>Urania</em> is a dreamcore-inspired AI installation and part of an ongoing investigation into
