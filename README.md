@@ -19,3 +19,5 @@ a scene from the pilot for the projector
 Smartphone → displays the mirrored hologram loop inside the Pepper’s Ghost stage
 
 Raspberry Pi 3 → boots directly to projector playback of the teaser, looping on startup
+
+Attribution-NonCommercial-ShareAlike 4.0 International
