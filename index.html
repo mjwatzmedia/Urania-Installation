@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Urania — DIY Pepper’s Ghost + Pi Projector Loop</title>
+  <title>Urania — Installation Documentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -15,15 +16,15 @@
     }
 
     header {
-      padding: 2rem 1.5rem 1rem;
+      padding: 2.5rem 1.5rem 1.5rem;
       text-align: center;
-      background: radial-gradient(circle at top, #3949ab, #060814 60%);
+      background: radial-gradient(circle at top, #3949ab, #060814 65%);
     }
 
     h1 {
       margin: 0;
-      font-size: 1.9rem;
-      letter-spacing: 0.03em;
+      font-size: 2rem;
+      letter-spacing: 0.04em;
     }
 
     h2 {
@@ -33,8 +34,13 @@
       padding-bottom: 0.4rem;
     }
 
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+
     p {
-      margin: 0.5rem 0 1rem;
+      margin: 0.6rem 0 1rem;
     }
 
     main {
@@ -44,33 +50,13 @@
     }
 
     .tagline {
-      margin-top: 0.75rem;
+      margin-top: 0.9rem;
       opacity: 0.9;
       font-size: 0.95rem;
     }
 
     .section {
-      margin-bottom: 2.5rem;
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
-
-    iframe {
-      width: 100%;
-      min-height: 220px;
-      border: none;
-      border-radius: 6px;
-      box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
-    }
-
-    @media (min-width: 720px) {
-      iframe {
-        min-height: 320px;
-      }
+      margin-bottom: 2.75rem;
     }
 
     ul {
@@ -78,7 +64,7 @@
     }
 
     code {
-      font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
       font-size: 0.9rem;
       background: #111520;
       padding: 0.15rem 0.35rem;
@@ -93,12 +79,12 @@
     .top-link {
       text-align: center;
       font-size: 0.9rem;
-      margin-top: 0.5rem;
+      margin-top: 0.75rem;
     }
 
     footer {
       text-align: center;
-      padding: 1rem 1.5rem 2rem;
+      padding: 1.2rem 1.5rem 2rem;
       font-size: 0.85rem;
       opacity: 0.7;
     }
@@ -112,88 +98,108 @@
     }
   </style>
 </head>
+
 <body>
   <header>
-    <h1>Urania Installation</h1>
+    <h1>Urania</h1>
     <p class="tagline">
-      DIY Pepper’s Ghost “hologram” + Raspberry Pi projector loop · part of an AI sci-fi TV project
+      An interdisciplinary installation using holographic illusion, sculpture, and data visualization
     </p>
     <p class="top-link">
-      Build & setup details: <a href="About/index.html">view the full guide →</a>
+      Build & documentation: <a href="About/index.html">view project details →</a>
     </p>
   </header>
 
   <main>
+
     <section class="section" id="overview">
       <h2>Overview</h2>
       <p>
-        This site hosts everything needed to build and exhibit the <strong>Urania</strong> installation:
+        This site documents the current iteration of <strong>Urania</strong>, an interdisciplinary installation
+        that combines a Pepper’s Ghost hologram, sculptural assemblage, photographic prints,
+        and regional energy data to examine the material and environmental costs of artificial intelligence.
       </p>
-      <ul>
-        <li>3D-printed, smartphone-compatible Pepper’s Ghost stage + TV shell</li>
-        <li>Raspberry Pi 3 projector loop that auto-plays a teaser scene on boot</li>
-        <li>Two teaser videos:
-          <ul>
-            <li>Mirrored hologram loop for the Pepper’s Ghost stage</li>
-            <li>Teaser scene from the Urania pilot for the wall projector</li>
-          </ul>
-        </li>
-      </ul>
+
       <p>
-        <strong>Basic workflow:</strong><br>
-        QR code → opens this site → you choose the hologram or the teaser →
-        <br>Phone goes into the Pepper’s Ghost stage · Raspberry Pi 3 drives the projector.
+        Rather than presenting AI as an abstract or immaterial system, the work grounds computation
+        in physical infrastructure, domestic space, and human labor.
       </p>
     </section>
 
-    <section class="section" id="videos">
-      <h2>Teaser Videos</h2>
+    <section class="section" id="installation-components">
+      <h2>Installation Components</h2>
+      <ul>
+        <li>
+          <strong>Pepper’s Ghost hologram stage</strong><br>
+          A smartphone-based holographic illusion using historical stage techniques
+          to render Urania as a speculative AI figure.
+        </li>
 
-      <div class="video-grid">
-        <div>
-          <h3>1. Urania Hologram Loop (for Pepper’s Ghost)</h3>
-          <p class="note">
-            Load this on a smartphone, set to loop, and place the phone face-up in the stage.
-          </p>
-          <!-- Replace YOUTUBE_ID_1 with your actual video ID -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/z2S1kZjG_q8?si=CgCsRQQp4PesjDV1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <li>
+          <strong>Floor-based sculptural assemblage</strong><br>
+          A found-object body constructed from clothing, electronics, cabling, and domestic materials,
+          foregrounding the human cost of corporate computational systems.
+        </li>
 
-        <div>
-          <h3>2. Teaser Scene for Projector (Raspberry Pi)</h3>
-          <p class="note">
-            Download this file to your Pi or stream it while you test the projector setup.
-          </p>
-          <!-- Replace YOUTUBE_ID_2 with your actual video ID -->
-          <iframe
-            src="https://www.youtube.com/embed/YOUTUBE_ID_2?rel=0"
-            title="Urania teaser for projector">
-          </iframe>
-        </div>
-      </div>
+        <li>
+          <strong>Photographic prints</strong><br>
+          Large-scale images referencing architectural, ecclesiastical, and infrastructural forms,
+          treating data centers as contemporary sites of faith and extraction.
+        </li>
+
+        <li>
+          <strong>Data visualizations</strong><br>
+          Simplified graphs derived from TEP/TEPC electricity-load data,
+          situating AI infrastructure within Tucson’s regional grid.
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="documentation">
+      <h2>Documentation & Replication</h2>
+      <p>
+        This repository serves as a transparent record of the project’s development.
+        Fabrication notes, technical decisions, and exhibition considerations are shared
+        to support accessibility, learning, and replication.
+      </p>
+
+      <p class="note">
+        Data visualizations:<br>
+        <a href="data-viz/index.html">
+          Regional grid context & assumed data center demand →
+        </a>
+      </p>
+
+      <p class="note">
+        Consultation & acknowledgments:<br>
+        <a href="Consultants%20%26%20Acknowledgments/index.html">
+          Individuals and institutions consulted during development →
+        </a>
+      </p>
     </section>
 
     <section class="section" id="about-project">
       <h2>About the Project</h2>
       <p>
-        <em>Urania</em> is a dreamcore-inspired AI installation and part of an ongoing investigation into
-        human–machine relationships, genre aesthetics, and the environmental cost of technological
-        evolution. This page is a practical hub for anyone exhibiting or rebuilding the installation.
+        <em>Urania</em> operates at the intersection of speculative fiction,
+        domestic infrastructure, and environmental accounting.
+        The project treats AI not as a sentient agent, but as a corporate system
+        sustained by continuous energy input, human attention, and material extraction.
       </p>
-    <p>More work: <a href="https://youtube.com/mjwatz">youtube.com/mjwatz</a></p>
-        <p class="note">
- Data Visualizations:<br>
-  <a href="https://github.com/mjwatzmedia/Urania-Installation/tree/main/data-viz" target="_blank" rel="noopener noreferrer">
-    Data Center Assumed Energy Demand Graphs
-     </p>
-    <p>
-    <a href="Consultants & Acknowledgments/index.html"> Acknowledgments & Consultation: Individuals consulted on energy systems, AI, fabrication, and exhibition design</a>
-    </p>
+
+      <p>
+        More work by the artist:
+        <a href="https://youtube.com/mjwatz" target="_blank" rel="noopener noreferrer">
+          youtube.com/mjwatz
+        </a>
+      </p>
     </section>
+
   </main>
 
   <footer>
-    Urania Installation · DIY Pepper’s Ghost + Pi projector loop · Attribution-NonCommercial-ShareAlike 4.0 International
+    Urania Installation · Pepper’s Ghost hologram + sculptural installation ·
+    Attribution–NonCommercial–ShareAlike 4.0 International
   </footer>
 </body>
 </html>
