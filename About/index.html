@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Urania — Build & Setup Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -15,14 +16,14 @@
     }
 
     header {
-      padding: 2rem 1.5rem 1rem;
+      padding: 2.5rem 1.5rem 1.5rem;
       text-align: center;
-      background: radial-gradient(circle at top, #3949ab, #060814 60%);
+      background: radial-gradient(circle at top, #3949ab, #060814 65%);
     }
 
     h1 {
       margin: 0;
-      font-size: 1.9rem;
+      font-size: 2rem;
       letter-spacing: 0.03em;
     }
 
@@ -33,8 +34,13 @@
       padding-bottom: 0.4rem;
     }
 
+    h3 {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+
     p {
-      margin: 0.5rem 0 1rem;
+      margin: 0.6rem 0 1rem;
     }
 
     main {
@@ -44,20 +50,16 @@
     }
 
     .tagline {
-      margin-top: 0.75rem;
+      margin-top: 0.9rem;
       opacity: 0.9;
       font-size: 0.95rem;
     }
 
     .section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 3rem;
     }
 
-    ul {
-      padding-left: 1.3rem;
-    }
-
-    ol {
+    ul, ol {
       padding-left: 1.3rem;
     }
 
@@ -82,7 +84,7 @@
 
     footer {
       text-align: center;
-      padding: 1rem 1.5rem 2rem;
+      padding: 1.2rem 1.5rem 2rem;
       font-size: 0.85rem;
       opacity: 0.7;
     }
@@ -96,83 +98,126 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Urania Installation · Build & Setup Guide</h1>
     <p class="tagline">
-      Detailed instructions for the Pepper’s Ghost stage and Raspberry Pi projector loop.
+      Fabrication and setup documentation for the Pepper’s Ghost hologram and physical installation
     </p>
     <p class="top-link">
-  ← Back to main page: <a href="../index.html">Urania videos & overview</a>
-</p>
+      ← Back to main page: <a href="../index.html">Urania overview</a>
+    </p>
   </header>
 
   <main>
-    <section class="section" id="pepper-ghost">
-      <h2>Pepper’s Ghost Stage · 3D TV Shell</h2>
+
+    <section class="section" id="overview">
+      <h2>Overview</h2>
       <p>
-        The Pepper’s Ghost “hologram” uses a stage with an acrylic panel + a TV shell, so the phone image
-        appears to float in space.
+        This guide documents the fabrication and setup of the physical components used in the
+        current iteration of <strong>Urania</strong>. It focuses on the Pepper’s Ghost hologram stage
+        and considerations for installing the work in a shared exhibition space.
       </p>
-      <p><strong>Files you’ll need:</strong></p>
-      <ul>
-        <li>3D models for the TV case (e.g., <code>.stl</code> or <code>.3mf</code>)</li>
-        <li>3D models for the internal stage / phone holder</li>
-        <li>Laser-cut dimensions for the clear acrylic panel</li>
-      </ul>
-     <p class="note">
-  3D files for the illusion stage are here:<br>
-  <a href="https://github.com/mjwatzmedia/mjwatzmedia.github.io/tree/main/Illusion%20Stage" target="_blank" rel="noopener noreferrer">
-    Illusion Stage · 3D models on GitHub
-  </a>
-</p>
-      <h3>Build Steps (Summary)</h3>
-      <ol>
-        <li>Print the TV shell and stage pieces on a 3D printer. Assemble.</li>
-        <li>Cut the acrylic panel according to the dimensions. Mount the acrylic panel inside the stage.</li>
-        <li>Test fit your smartphone so that the reflected hologram is centered in the acrylic.</li>
-        <li>Load the <strong>Urania hologram loop</strong> on the phone, set brightness high, and place the phone into the stage.</li>
-      </ol>
-    </section>
-
-    <section class="section" id="raspberry-pi">
-      <h2>Raspberry Pi 3 · Projector Loop Setup</h2>
-      <p>
-        This setup uses a Raspberry Pi 3 connected to a projector to auto-play the Urania teaser 
-        scene in a continuous loop when the Pi boots.
-      </p>
-
-      <h3>Hardware</h3>
-      <ul>
-        <li>Raspberry Pi 3 (or similar)</li>
-        <li>microSD card with Raspberry Pi OS</li>
-        <li>HDMI cable + projector or HDMI display</li>
-        <li>Power supply for the Pi</li>
-      </ul>
-
-      <h3>Basic Setup Steps</h3>
-      <ol>
-        <li>Install Raspberry Pi OS on the microSD card and boot the Pi.</li>
-        <li>Copy the Urania teaser video file onto the Pi (e.g., to <code>/home/pi/videos/urania-teaser.mp4</code>).</li>
-        <li>Install a lightweight media player (for example, <code>omxplayer</code> or <code>vlc</code>).</li>
-        <li>Create a small startup script that:
-          <ul>
-            <li>waits a few seconds after boot, then</li>
-            <li>launches the media player in full-screen loop mode on the projector.</li>
-          </ul>
-        </li>
-        <li>Add that script to your autostart (for example via <code>~/.config/lxsession</code> or <code>crontab</code> with <code>@reboot</code>).</li>
-      </ol>
 
       <p class="note">
-        Once this is configured, you should be able to plug in the Pi and projector,
-        and the teaser will start playing automatically in a loop after boot.
+        This iteration does not include a projector loop or Raspberry Pi–based video playback.
+        All instructions below reflect the installation as currently exhibited.
       </p>
     </section>
+
+    <section class="section" id="pepper-ghost">
+      <h2>Pepper’s Ghost Stage · 3D TV Shell</h2>
+
+      <p>
+        The Pepper’s Ghost “hologram” uses a compact stage with an acrylic panel housed inside
+        a TV-style shell. A smartphone placed face-up inside the structure reflects its image
+        onto the acrylic, creating the illusion of a floating figure.
+      </p>
+
+      <p><strong>Files you’ll need:</strong></p>
+      <ul>
+        <li>3D models for the TV shell (<code>.stl</code> or <code>.3mf</code>)</li>
+        <li>3D models for the internal stage and phone holder</li>
+        <li>Dimensions for the clear acrylic panel</li>
+      </ul>
+
+      <p class="note">
+        3D files for the illusion stage are available here:<br>
+        <a href="https://github.com/mjwatzmedia/mjwatzmedia.github.io/tree/main/Illusion%20Stage"
+           target="_blank" rel="noopener noreferrer">
+          Illusion Stage · 3D models on GitHub
+        </a>
+      </p>
+
+      <h3>Build Steps (Summary)</h3>
+      <ol>
+        <li>3D-print the TV shell and internal stage components. Assemble the shell.</li>
+        <li>Cut the acrylic panel to size and mount it inside the shell at the correct angle.</li>
+        <li>Test-fit the smartphone so the reflected image aligns cleanly in the acrylic.</li>
+        <li>Adjust internal spacing and angle until the hologram appears centered and stable.</li>
+      </ol>
+    </section>
+
+    <section class="section" id="installation-considerations">
+      <h2>Installation Considerations</h2>
+
+      <p>
+        The Pepper’s Ghost stage is installed as part of a larger physical environment that includes
+        sculptural elements, photographic prints, and data visualizations.
+      </p>
+
+      <ul>
+        <li>Control ambient light to preserve hologram contrast.</li>
+        <li>Place the stage at a comfortable viewing height for close inspection.</li>
+        <li>Ensure power and cable management remain visible, as these elements are conceptually significant.</li>
+        <li>Allow clear sightlines between the hologram and the surrounding sculptural assemblage.</li>
+      </ul>
+
+      <p class="note">
+        The installation prioritizes transparency of materials and infrastructure rather than concealment.
+      </p>
+    </section>
+
   </main>
 
   <footer>
-    Urania Installation · Build & setup documentation
+    Urania Installation · Build & setup documentation ·
+    Attribution–NonCommercial–ShareAlike 4.0 International
   </footer>
 </body>
 </html>
+
+<section class="section" id="future-variants">
+  <h2>Future Build Variants</h2>
+
+  <p>
+    <em>Urania</em> is designed as an evolving installation. While this documentation reflects
+    the current exhibited iteration, future builds may explore alternative configurations
+    or expanded components as the project develops.
+  </p>
+
+  <ul>
+    <li>
+      <strong>Alternate hologram content</strong><br>
+      Different holographic performances or behaviors rendered within the Pepper’s Ghost stage.
+    </li>
+    <li>
+      <strong>Expanded data layers</strong><br>
+      Additional or updated visualizations reflecting changing regional energy or infrastructure conditions.
+    </li>
+    <li>
+      <strong>Time-based media elements</strong><br>
+      Optional inclusion of projected or screen-based media in future exhibition contexts.
+    </li>
+    <li>
+      <strong>Scaled fabrication variants</strong><br>
+      Adjustments to the stage or housing for different venues, budgets, or audience distances.
+    </li>
+  </ul>
+
+  <p class="note">
+    Any future variants will be documented and versioned separately. This guide describes
+    the current iteration only.
+  </p>
+</section>
