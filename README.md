@@ -15,8 +15,8 @@ Exhibition layout considerations, material decisions, and technical notes for pr
 → About/
 
 Data visualization context
-Simplified visualizations derived from TEP/TEPC electricity-load data, situating AI infrastructure within Tucson’s regional grid.
-→ data-viz/
+clippings collage situating AI infrastructure within the local grid.
+→ News-viz/
 
 Consultation & acknowledgments
 Credits and contextual notes for individuals and institutions consulted during development.
@@ -24,20 +24,20 @@ Credits and contextual notes for individuals and institutions consulted during d
 
 Current Workflow (This Iteration)
 
-QR code → opens the GitHub Pages documentation site
+Plaque "Touch" → touch phone to NFC tag > opens the GitHub Pages documentation site with "Urania Hologram" YouTube Video, which a 2nd plaque tells them to "Play",
 
-Smartphone → placed face-up inside the Pepper’s Ghost stage to render the holographic figure
+Smartphone placed face-up inside the Pepper’s Ghost stage tray > "Ïnsert" into the slit of the monitor. 
 
-Physical installation → floor-based sculptural assemblage, photographic prints, and data visualizations experienced in shared space
+Physical installation → sculptural modge podge assemblage as b ase, photographic prints as religious iconography, and Pepper's Ghost Illusion Monitor that requires direct engagement from the audience.
 
 ⚠️ This iteration does not include a projector loop or teaser video playback.
 All materials in this repository reflect the installation as it currently exists.
 
 About the Project
 
-Urania operates at the intersection of speculative fiction, domestic infrastructure, and environmental accounting. The project juxtaposes a polished holographic AI figure with grounded, material evidence of extraction—corporate systems rendered through bodies, appliances, data, and power dependencies.
+Urania operates at the intersection of speculative fiction, domestic infrastructure, and environmental accounting. The project juxtaposes a holographic AI hologram with grounded, material evidence of extraction — corporate systems rendered through bodies, data, and power dependencies.
 
-By staging AI within everyday space rather than the “cloud,” the installation asks how technological optimism intersects with scarcity, responsibility, and the lived costs of computation.
+By staging AI within everyday space, the installation asks how technological optimism intersects with scarcity, responsibility, and the lived costs of computation.
 
 Future Iterations
 
