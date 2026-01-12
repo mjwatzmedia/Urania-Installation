@@ -1,8 +1,8 @@
 Urania — Pepper’s Ghost Installation & Documentation
 
-Everything needed to fabricate, understand, and exhibit the current iteration of the Urania installation.
+Everything needed to fabricate, converse, and exhibit the current iteration of the "Ürania Installation".
 
-Urania is an interdisciplinary installation combining a Pepper’s Ghost hologram, sculptural assemblage, photographic prints, and regional energy data to examine the material and environmental costs of artificial intelligence. The project treats AI not as an abstract or immaterial system, but as infrastructure sustained by energy, labor, and attention.
+Urania is an interdisciplinary installation that combines a Pepper’s Ghost hologram, sculptural regional decopage, and photographic prints to examine artificial intelligence. The project treats AI not as an abstract or immaterial system, but as infrastructure sustained by energy, labor, and attention.
 
 What’s Included
 
